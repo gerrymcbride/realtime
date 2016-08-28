@@ -1,0 +1,30 @@
+
+{% extends "template.html" %}
+
+{% block content %}
+<title>Home</title>
+<div align="center">
+<h2> Get Real Time Travel Updates </h2>
+<h3> Fill in your city of departure and destination. </h3>
+<h5> Hit submit to view your travel options! </h5>
+<br>
+<br>
+<br>
+<br>
+<form action="/about" class="form-inline" method="post">
+    <input type="text" class ="form-control" placeholder = "Departure" name="departure" value="{{request.form.departure}}">
+    <input type="text" class="form-control" placeholder ="Destination" name="arrival" value="{{request.form.arrival}}">
+    <input class="btn btn-default" type="submit" value="Submit">
+   </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+   <h2> Safe Travels! </h2>
+</div>
+
+{% endblock %}
