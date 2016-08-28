@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+
+{% block content %}
+<title>Your Options</title>
+<div align="center">
+<h1> Current time is {{timenow}}hrs </h1>
+<h1> Next Available </h1>
+<table>
+<h2><tr><th> Route Number </th><th> Route Destination </th><th> Deparure Time </th><th>Expected Arrival </th><th> Mode of Transport </th></tr></h2>
+{% for item in next_bus %}
+<tr><td width="85">{{item[0]}}</td><td width="105">{{item[1]}}</td><td width="85">{{item[2]}}</td><td width="85">{{item[3]}}</td><td width="85">{{item[4]}}</td></tr>
+
+{% endfor %}
+</table>
+
+<h5> If something doesn't look right, let us know by filling out a <a href="/contact"> contact form!</a> </h5>
+
+</div>
+{% endblock %}
