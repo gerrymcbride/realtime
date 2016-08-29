@@ -1,7 +1,7 @@
 # realtime
 real-time travel info app
 
-Built using Flask Micro framework.
+Built using Flask Micro framework and Python 3.
 
 Requires following modules which can be installed immediatley using pip:
 
@@ -16,3 +16,5 @@ SQLite3 timetable contains 50 entries. For testing purposes, default departure i
 
 app.py contains e-mail server information for clarity, but on a live app should be stored in config.py file.
 E-mail can be activated by entering in appropriate information, address & password, on line 21-22. Similarly, line 82 designates which e-mail address wil recieve any queries from contact forms.
+
+Run app.py file through command line 'python app.py' to activate localhost and view webapp.
