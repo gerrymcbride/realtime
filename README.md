@@ -1,7 +1,7 @@
 # realtime
 Real-Time Travel Info Demonstration Application
 
-Built using Flask Micro Framework and Python 3.
+This application is built using Flask Micro Framework and Python 3.
 
 In order to run successfully from a local server, this application requires the following modules which can be installed instantaneously using pip installation:
 
